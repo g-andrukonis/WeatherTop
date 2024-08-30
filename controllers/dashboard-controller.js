@@ -18,4 +18,11 @@ export const dashboardController = {
     await objectStore.addObject(newObject);
     response.redirect("/dashboard");
   },
+
+  async deleteObject(request, response) {
+    const objectId = request.params.id;
+    console.log(`Deleting Object ${objectId}`);
+    await objectStore.deleteObjectById(objectId);
+    response.redirect("/dashboard");
+  },
 };

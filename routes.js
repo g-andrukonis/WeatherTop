@@ -8,6 +8,8 @@ export const router = express.Router();
 router.get("/", dashboardController.index);
 router.get("/dashboard", dashboardController.index);
 router.post("/dashboard/addobject", dashboardController.addObject);
+router.get("/dashboard/deleteobject/:id", dashboardController.deleteObject);
 router.get("/object/:id", objectController.index);
-router.post("/object/:id/addreport", objectController.addReport)
+router.post("/object/:id/addreport", objectController.addReport);
+router.get("/object/:objectid/deletereport/:reportid", objectController.deleteReport);
 router.get("/about", aboutController.index);

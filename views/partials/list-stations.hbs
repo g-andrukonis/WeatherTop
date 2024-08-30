@@ -1,9 +1,13 @@
 {{#each objects}}
 <div class="box box-link-hover-shadow">
   <h2 class="title">
-    <a href="/object/{{_id}}">
-      {{title}}
-    </a>
+    {{title}}
   </h2>
+  <a href="/object/{{_id}}" class="button">
+    {{>icons/open}}
+  </a>
+  <a href="/dashboard/deleteobject/{{_id}}" class="button">
+    {{>icons/delete}}
+  </a>
 </div>
 {{/each}}

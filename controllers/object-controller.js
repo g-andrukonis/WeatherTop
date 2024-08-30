@@ -24,4 +24,12 @@ export const objectController = {
     await reportStore.addReport(object._id, newReport);
     response.redirect("/object/" + object._id);
   },
+
+  async deleteReport(request, response) {
+    const objectId = request.params.objectid;
+    const reportId = request.params.reportid;
+    console.log(`Deleting Report ${reportId} from Station ${objectId}`);
+    await reportStore.deleteReport(request.params.reportId);
+    response.redirect("/object/" + objectId);
+  },
 };
