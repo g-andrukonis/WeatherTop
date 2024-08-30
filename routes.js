@@ -1,5 +1,6 @@
 import express from "express";
 import { dashboardController } from "./controllers/dashboard-controller.js";
+import { objectController } from "./controllers/object-controller.js";
 import { aboutController } from "./controllers/about-controller.js";
 
 export const router = express.Router();
@@ -7,4 +8,6 @@ export const router = express.Router();
 router.get("/", dashboardController.index);
 router.get("/dashboard", dashboardController.index);
 router.post("/dashboard/addobject", dashboardController.addObject);
+router.get("/object/:id", objectController.index);
+router.post("/object/:id/addreport", objectController.addReport)
 router.get("/about", aboutController.index);

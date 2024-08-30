@@ -1,0 +1,50 @@
+{
+  "file": "./models/reports.json",
+  "reports": [
+    {
+      "code": 1,
+      "temp": 12,
+      "windSpeed": 22,
+      "windDirection": 0,
+      "pressure": 2,
+      "_id": "401278ae-22fd-4f96-bd1b-dd9e0e5a389e",
+      "objectid": "cb355f54-f7f7-47b8-8d02-6d5d5071a483"
+    },
+    {
+      "code": 2,
+      "temp": 21,
+      "windSpeed": 12,
+      "windDirection": 0,
+      "pressure": 4,
+      "_id": "b1a07632-a62b-41a3-ae0c-cba109b072b1",
+      "objectid": "cb355f54-f7f7-47b8-8d02-6d5d5071a483"
+    },
+    {
+      "code": 1,
+      "temp": 2,
+      "windSpeed": 3,
+      "windDirection": 4,
+      "pressure": 5,
+      "_id": "295cb084-959b-4a17-bed7-1ad9cc443dca",
+      "objectid": "693762c3-1993-44c7-95c1-b80804239db7"
+    },
+    {
+      "code": 2,
+      "temp": 3,
+      "windSpeed": 4,
+      "windDirection": 5,
+      "pressure": 6,
+      "_id": "c4373108-13c7-4604-a7a3-27dafb78ce52",
+      "objectid": "693762c3-1993-44c7-95c1-b80804239db7"
+    },
+    {
+      "code": 3,
+      "temp": 4,
+      "windSpeed": 5,
+      "windDirection": 6,
+      "pressure": 7,
+      "_id": "a0ddc814-979a-4246-ab7b-4323a7ff1a43",
+      "objectid": "693762c3-1993-44c7-95c1-b80804239db7"
+    }
+  ]
+}

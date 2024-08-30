@@ -1,5 +1,6 @@
 import { v4 } from "uuid";
 import { initStore } from "../utils/store-utils.js";
+import { reportStore } from "./report-store.js";
 
 const db = initStore("objects");
 
@@ -20,9 +21,10 @@ export const objectStore = {
   async getObjectById(id) {
     await db.read();
     const list = db.data.objects.find((object) => object._id === id);
+    list.reports = await reportStore.getReportsByObjectId(list._id);
     return list;
   },
-
+  
   async deleteObjectById(id) {
     await db.read();
     const index = db.data.objects.findIndex((object) => object._id === id);
