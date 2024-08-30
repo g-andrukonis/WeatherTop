@@ -6,4 +6,5 @@ export const router = express.Router();
 
 router.get("/", dashboardController.index);
 router.get("/dashboard", dashboardController.index);
+router.post("/dashboard/addobject", dashboardController.addObject);
 router.get("/about", aboutController.index);

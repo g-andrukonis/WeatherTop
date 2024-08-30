@@ -3,7 +3,7 @@ import { initStore } from "../utils/store-utils.js";
 
 const db = initStore("objects");
 
-export const playlistStore = {
+export const objectStore = {
   async getAllObjects() {
     await db.read();
     return db.data.objects;
@@ -11,7 +11,7 @@ export const playlistStore = {
 
   async addObject(object) {
     await db.read();
-    playlist._id = v4();
+    object._id = v4();
     db.data.objects.push(object);
     await db.write();
     return object;
@@ -23,7 +23,7 @@ export const playlistStore = {
     return list;
   },
 
-  async deleteobjectById(id) {
+  async deleteObjectById(id) {
     await db.read();
     const index = db.data.objects.findIndex((object) => object._id === id);
     db.data.objects.splice(index, 1);
