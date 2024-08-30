@@ -1,0 +1,32 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Temp</th>
+      <th>Wind Speed</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each object.reports}}
+    <tr>
+      <td>
+        {{code}}
+      </td>
+      <td>
+        {{temp}}
+      </td>
+      <td>
+        {{windSpeed}}
+      </td>
+      <td>
+        {{windDirection}}
+      </td>
+      <td>
+        {{pressure}}
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
