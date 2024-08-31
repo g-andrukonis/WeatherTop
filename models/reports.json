@@ -117,6 +117,15 @@
       "pressure": 7,
       "_id": "b2e13c48-72d9-462b-b742-44577d2b3119",
       "objectid": "c7913504-33cd-4966-85ee-427ebf4c18af"
+    },
+    {
+      "code": 3,
+      "temp": 4,
+      "windSpeed": 44,
+      "windDirection": 444,
+      "pressure": 123,
+      "_id": "db766da0-775b-41c7-90da-88df7166dd4d",
+      "objectid": "23feb91e-b858-4dca-8351-0c060bdbf335"
     }
   ]
 }
