@@ -24,7 +24,12 @@ export const objectStore = {
     list.reports = await reportStore.getReportsByObjectId(list._id);
     return list;
   },
-  
+
+  async getObjectsByUserId(userid) {
+    await db.read();
+    return db.data.objects.filter((object) => object.userid === userid);
+  },
+
   async deleteObjectById(id) {
     await db.read();
     const index = db.data.objects.findIndex((object) => object._id === id);

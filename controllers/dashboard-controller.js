@@ -1,18 +1,22 @@
 import { objectStore } from "../models/object-store.js";
+import { accountsController } from "./accounts-controller.js";
 
 export const dashboardController = {
   async index(request, response) {
+    const loggedInUser = await accountsController.getLoggedInUser(request);
     const viewData = {
       title: "WeatherTop Dashboard",
-      objects: await objectStore.getAllObjects(),
+      objects: await objectStore.getObjectsByUserId(loggedInUser._id),
     };
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);
   },
 
   async addObject(request, response) {
+    const loggedInUser = await accountsController.getLoggedInUser(request);
     const newObject = {
       title: request.body.title,
+      userid: loggedInUser._id,
     };
     console.log(`adding object ${newObject.title}`);
     await objectStore.addObject(newObject);
