@@ -29,7 +29,7 @@ export const objectController = {
     const objectId = request.params.objectid;
     const reportId = request.params.reportid;
     console.log(`Deleting Report ${reportId} from Station ${objectId}`);
-    await reportStore.deleteReport(request.params.reportId);
+    await reportStore.deleteReport(reportId);
     response.redirect("/object/" + objectId);
   },
 };

@@ -1,4 +1,59 @@
 {
   "file": "./models/reports.json",
-  "reports": []
+  "reports": [
+    {
+      "code": 1,
+      "temp": 2,
+      "windSpeed": 3,
+      "windDirection": 4,
+      "pressure": 5,
+      "_id": "99fddf58-5db3-4d7b-b877-1973b3a01751",
+      "objectid": "5eb00b13-8bbf-43ac-9bab-aca74f5334d0"
+    },
+    {
+      "code": 2,
+      "temp": 3,
+      "windSpeed": 4,
+      "windDirection": 5,
+      "pressure": 6,
+      "_id": "4a68aba6-5b4e-4699-8720-15a8ae095675",
+      "objectid": "2d09a8d5-89fd-4d5e-b5da-40a1976e8b7d"
+    },
+    {
+      "code": 5,
+      "temp": 4,
+      "windSpeed": 3,
+      "windDirection": 6,
+      "pressure": 7,
+      "_id": "5d858a51-954b-4f31-995c-c5abf49eff86",
+      "objectid": "2d09a8d5-89fd-4d5e-b5da-40a1976e8b7d"
+    },
+    {
+      "code": 2,
+      "temp": 3,
+      "windSpeed": 3,
+      "windDirection": 4,
+      "pressure": 5,
+      "_id": "02ae39ec-5619-47e1-8fcf-9ea4fe21ee80",
+      "objectid": "98b4c81f-be90-4155-965d-a19de5ffaf2d"
+    },
+    {
+      "code": 7,
+      "temp": 7,
+      "windSpeed": 7,
+      "windDirection": 7,
+      "pressure": 7,
+      "_id": "a6349ce9-6100-4567-9087-f5728edd4a6b",
+      "objectid": "98b4c81f-be90-4155-965d-a19de5ffaf2d"
+    },
+    {
+      "code": 7,
+      "temp": 7,
+      "windSpeed": 8,
+      "windDirection": 8,
+      "pressure": 9,
+      "_id": "9fc38873-2ce8-4903-b420-e62d48e1cce5",
+      "objectid": "cb355f54-f7f7-47b8-8d02-6d5d5071a483"
+    }
+  ]
 }
