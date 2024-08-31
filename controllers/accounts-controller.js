@@ -10,7 +10,7 @@ export const accountsController = {
 
   login(request, response) {
     const viewData = {
-      title: "Login to the Service",
+      title: "Login",
     };
     response.render("login-view", viewData);
   },
@@ -22,7 +22,7 @@ export const accountsController = {
 
   signup(request, response) {
     const viewData = {
-      title: "Login to the Service",
+      title: "Signup",
     };
     response.render("signup-view", viewData);
   },
