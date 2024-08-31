@@ -1,47 +1,54 @@
 {{> welcome-menu active="signup"}}
 
 <section class="section">
-  <h1 class="title">Sign up</h1>
-  <form action="/register" method="POST">
-    <div class="field is-horizontal">
-      <div class="field-body">
-        <div class="field">
-          <label class="label">First Name</label>
-          <div class="control">
-          <input class="input" type="text" placeholder="Enter first name" name="firstName">
+  <div class="columns">
+   <div class="column">
+      <img src="https://cdn.glitch.global/ececab76-aa50-478a-b365-bdce96014dc3/image-about.jpg?v=1725103216205" alt="figure presenting weather"> 
+    </div>
+    <div class="column">
+      <h1 class="title">Sign up</h1>
+      <form action="/register" method="POST">
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <label class="label">First Name</label>
+              <div class="control">
+              <input class="input" type="text" placeholder="Enter first name" name="firstName">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Last Name</label>
+              <div class="control">
+              <input class="input" type="text" placeholder="Enter last name" name="lastName">
+              </div>
+            </div>
           </div>
         </div>
         <div class="field">
-          <label class="label">Last Name</label>
-          <div class="control">
-          <input class="input" type="text" placeholder="Enter last name" name="lastName">
-          </div>
+          <p class="control has-icons-left has-icons-right">
+          <input class="input" type="text" placeholder="Enter Email" name="email">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+          </p>
         </div>
-      </div>
+        <div class="field">
+          <p class="control has-icons-left">
+          <input class="input" type="password" placeholder="Enter Password" name="password">
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+          </p>
+        </div>
+        <div class="field">
+        <p class="control">
+          <button class="button is-black">Submit</button>
+        </p>
+        </div>
+      </form>
     </div>
-    <div class="field">
-      <p class="control has-icons-left has-icons-right">
-      <input class="input" type="text" placeholder="Enter Email" name="email">
-       <span class="icon is-small is-left">
-        <i class="fas fa-envelope"></i>
-      </span>
-      <span class="icon is-small is-right">
-        <i class="fas fa-check"></i>
-      </span>
-      </p>
-    </div>
-    <div class="field">
-      <p class="control has-icons-left">
-      <input class="input" type="password" placeholder="Enter Password" name="password">
-      <span class="icon is-small is-left">
-        <i class="fas fa-lock"></i>
-      </span>
-      </p>
-    </div>
-    <div class="field">
-    <p class="control">
-      <button class="button is-black">Submit</button>
-    </p>
-    </div>
-  </form>
+  </div>
 </section>

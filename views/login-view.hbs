@@ -1,31 +1,38 @@
 {{> welcome-menu active="login"}}
 
 <section class="section">
-  <h1 class="title">Log in</h1>
-  <form action="/authenticate" method="POST">
-    <div class="field">
-      <p class="control has-icons-left has-icons-right">
-      <input class="input" type="text" placeholder="Enter Email" name="email">
-       <span class="icon is-small is-left">
-        <i class="fas fa-envelope"></i>
-      </span>
-      <span class="icon is-small is-right">
-        <i class="fas fa-check"></i>
-      </span>
+  <div class="columns">
+    <div class="column">
+    <h1 class="title">Log in</h1>
+    <form action="/authenticate" method="POST">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+        <input class="input" type="text" placeholder="Enter Email" name="email">
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-check"></i>
+        </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control has-icons-left">
+        <input class="input" type="password" placeholder="Enter Password" name="password">
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+        </p>
+      </div>
+      <div class="field">
+      <p class="control">
+        <button class="button is-black">Submit</button>
       </p>
+      </div>
+    </form>
     </div>
-    <div class="field">
-      <p class="control has-icons-left">
-      <input class="input" type="password" placeholder="Enter Password" name="password">
-      <span class="icon is-small is-left">
-        <i class="fas fa-lock"></i>
-      </span>
-      </p>
-    </div>
-    <div class="field">
-    <p class="control">
-      <button class="button is-black">Submit</button>
-    </p>
-    </div>
-  </form>
+      <div class="column">
+        <img src="https://cdn.glitch.global/ececab76-aa50-478a-b365-bdce96014dc3/image-about.jpg?v=1725103216205" alt="figure presenting weather"> 
+      </div>
+  </div>
 </section>
