@@ -16,6 +16,8 @@ export const dashboardController = {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const newObject = {
       title: request.body.title,
+      latitude: Number(request.body.latitude),
+      longitude: Number(request.body.longitude),
       userid: loggedInUser._id,
     };
     console.log(`adding object ${newObject.title}`);

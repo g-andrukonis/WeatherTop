@@ -14,39 +14,46 @@
       "_id": "2d09a8d5-89fd-4d5e-b5da-40a1976e8b7d"
     },
     {
-      "title": "london",
+      "title": "milan",
+      "latitude": 22,
+      "longitude": 33,
       "userid": "62e3b402-1145-4562-9845-4077f0bc9ba6",
-      "_id": "16aa4731-721e-44df-b242-0df6e60b4be6"
+      "_id": "048a5839-bf7b-4598-89b0-01e0c9e1cbad"
     },
     {
-      "title": "liverpool",
+      "title": "roma",
+      "latitude": 33,
+      "longitude": 22,
       "userid": "62e3b402-1145-4562-9845-4077f0bc9ba6",
-      "_id": "c30689da-f87e-476e-9e7c-a1e03b2a7e26"
+      "_id": "b14e44fd-3d33-4ce8-a3b0-2fe40532d927"
     },
     {
       "title": "vilnius",
+      "latitude": 33,
+      "longitude": 22,
       "userid": "04e565cd-8eb0-4775-b155-068243eb58e6",
-      "_id": "d43389ef-104b-4b19-90e1-ab2ca1398112"
+      "_id": "4cff8b47-d7df-4399-bc03-4549fef13c7c"
     },
     {
-      "title": "kaunas",
-      "userid": "04e565cd-8eb0-4775-b155-068243eb58e6",
-      "_id": "23feb91e-b858-4dca-8351-0c060bdbf335"
-    },
-    {
-      "title": "canada",
+      "title": "madrid",
+      "latitude": 0,
+      "longitude": 0,
       "userid": "a9a2a853-1a5c-405c-9a82-948a4c5e5c78",
-      "_id": "7ea33cda-fd2d-4cb3-bedd-da4bd9c45520"
+      "_id": "40878672-62c0-4832-bec3-b3bf62aab72d"
     },
     {
-      "title": "iceland",
+      "title": "barcelona",
+      "latitude": 123,
+      "longitude": 321,
       "userid": "a9a2a853-1a5c-405c-9a82-948a4c5e5c78",
-      "_id": "175d7c29-cdc2-4a32-8396-78cdbc070884"
+      "_id": "74946a8d-32fb-47a6-8843-0fa4ebe75778"
     },
     {
-      "title": "egypt",
+      "title": "los angeles",
+      "latitude": 56,
+      "longitude": 65,
       "userid": "0a9496ec-f735-469a-a8b9-11bba814488b",
-      "_id": "c7913504-33cd-4966-85ee-427ebf4c18af"
+      "_id": "ec90005c-2132-4227-b09d-627ec7bbb764"
     }
   ]
 }

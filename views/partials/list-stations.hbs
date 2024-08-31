@@ -1,13 +1,32 @@
-{{#each objects}}
-<div class="box box-link-hover-shadow">
-  <h2 class="title">
-    {{title}}
-  </h2>
-  <a href="/object/{{_id}}" class="button">
-    {{>icons/open}}
-  </a>
-  <a href="/dashboard/deleteobject/{{_id}}" class="button">
-    {{>icons/delete}}
-  </a>
-</div>
-{{/each}}
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Station Title</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each objects}}
+    <tr>
+      <td>
+        {{title}}
+      </td>
+      <td>
+        {{latitude}}
+      </td>
+      <td>
+        {{longitude}}
+      </td>
+      <td>
+        <a href="/object/{{_id}}" class="button">
+          {{>icons/open}}
+        </a>
+        <a href="/dashboard/deleteobject/{{_id}}" class="button">
+          {{>icons/delete}}
+        </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
