@@ -61,6 +61,13 @@
       "longitude": 222,
       "userid": "62e3b402-1145-4562-9845-4077f0bc9ba6",
       "_id": "d8c4fc29-7437-49ee-ab7d-15f81fe6c4f1"
+    },
+    {
+      "title": "Stockholm",
+      "latitude": 59.3326,
+      "longitude": 18.0649,
+      "userid": "19fcd48c-0cb1-4af5-9383-e26e33a044e3",
+      "_id": "f6518520-6abf-4f44-a8cf-e9901b2ee5d6"
     }
   ]
 }

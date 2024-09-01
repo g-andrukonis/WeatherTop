@@ -4,6 +4,8 @@ import { dashboardController } from "./controllers/dashboard-controller.js";
 import { objectController } from "./controllers/object-controller.js";
 import { aboutController } from "./controllers/about-controller.js";
 
+import { apiController } from "./controllers/api-controller.js";
+
 export const router = express.Router();
 
 router.get("/", accountsController.index);
@@ -20,3 +22,6 @@ router.get("/object/:id", objectController.index);
 router.post("/object/:id/addreport", objectController.addReport);
 router.get("/object/:objectid/deletereport/:reportid", objectController.deleteReport);
 router.get("/about", aboutController.index);
+
+router.get("/api", apiController.index);
+router.post("/api/addreportapi", apiController.addReportApi);

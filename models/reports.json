@@ -198,6 +198,33 @@
       "pressure": 8,
       "_id": "f3262b80-aa0f-440d-9246-54f5bc14b321",
       "objectid": "b14e44fd-3d33-4ce8-a3b0-2fe40532d927"
+    },
+    {
+      "code": 678,
+      "temp": 77,
+      "windSpeed": 66.8,
+      "windDirection": 88,
+      "pressure": 88,
+      "_id": "da857fb7-fd18-49c8-8cfc-1f7280091958",
+      "objectid": "c6c4724c-7f70-49c0-9379-9808dcebe9aa"
+    },
+    {
+      "code": 55.88,
+      "temp": 8.9,
+      "windSpeed": 9.9,
+      "windDirection": 88,
+      "pressure": 77,
+      "_id": "bddb7d22-84fe-47b4-abc0-dfc700505db2",
+      "objectid": "c6c4724c-7f70-49c0-9379-9808dcebe9aa"
+    },
+    {
+      "code": 23,
+      "temp": 32,
+      "windSpeed": 56,
+      "windDirection": 65,
+      "pressure": 44,
+      "_id": "7dcb3bb8-7cb9-49fd-a59a-9ad45f60ffbc",
+      "objectid": "f6518520-6abf-4f44-a8cf-e9901b2ee5d6"
     }
   ]
 }

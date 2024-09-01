@@ -28,6 +28,13 @@
       "email": "six@mail.com",
       "password": "six",
       "_id": "0a9496ec-f735-469a-a8b9-11bba814488b"
+    },
+    {
+      "firstName": "seven",
+      "lastName": "seven",
+      "email": "seven@mail.com",
+      "password": "seven",
+      "_id": "19fcd48c-0cb1-4af5-9383-e26e33a044e3"
     }
   ]
 }

@@ -1,0 +1,28 @@
+{{> menu active="api"}}
+
+<section class="box has-text-centered">
+  <h3 class="is-3 title">
+    Weather Readings
+  </h3>
+  <div class="table is-bordered is-fullwidth is-hoverable">
+    {{> reading-table}}
+  </div>
+  <section class="box">
+    <h2 class="subtitle">Enter location for reading</h2>
+    <form action="/api/addreportapi" method="POST">
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field">
+            <input class="input" type="text" placeholder="lat 00.00" name="lat">
+          </div>
+          <div class="field">
+            <input class="input" type="text" placeholder="lon 00.00" name="lng">
+          </div>
+        </div>
+      </div>
+      <div class="field is-grouped">
+        <button class="button is-black">Add Reading</button>
+      </div>
+    </form>
+  </section>
+</section>
