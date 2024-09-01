@@ -7,11 +7,19 @@ export const objectController = {
     const object = await objectStore.getObjectById(request.params.id);
     const minTemperature = reportAnalytics.getMinTemperature(object);
     const maxTemperature = reportAnalytics.getMaxTemperature(object);
+    const minWind = reportAnalytics.getMinWind(object);
+    const maxWind = reportAnalytics.getMaxWind(object);
+    const minPressure = reportAnalytics.getMinPressure(object);
+    const maxPressure = reportAnalytics.getMaxPressure(object);
     const viewData = {
       title: "Station",
       object: object,
       minTemperature: minTemperature,
       maxTemperature: maxTemperature,
+      minWind: minWind,
+      maxWind: maxWind,
+      minPressure: minPressure,
+      maxPressure: maxPressure,
     };
     response.render("object-view", viewData);
   },
