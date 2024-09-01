@@ -1,12 +1,15 @@
 import { objectStore } from "../models/object-store.js";
 import { reportStore } from "../models/report-store.js";
+import { reportAnalytics } from "../utils/report-analytics.js";
 
 export const objectController = {
   async index(request, response) {
     const object = await objectStore.getObjectById(request.params.id);
+    const minTemperature = reportAnalytics.getMinTemperature(object);
     const viewData = {
       title: "Station",
       object: object,
+      minTemperature: minTemperature,
     };
     response.render("object-view", viewData);
   },
